@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie site</title>
+    <link rel="stylesheet" href="movie.css" />
+    <script src="movie.js" defer></script>
+  </head>
+  <body>
+    <section class="movie-search">
+      <h2 class="movie-search__title">Find Movies, Series and more</h2>
+      <div class="movie-search__line">
+        <label for="search"></label>
+        <input
+          class="movie-search__input"
+          id="search"
+          type="text"
+          placeholder="Enter keywords... "
+        />
+        <label for="category"></label>
+        <div class="movie-search__select-category">
+          <select name="category" id="category">
+            <option value="" disabled selected>Category</option>
+            <option value="movie">movie</option>
+            <option value="series">series</option>
+            <option value="episode">episode</option>
+          </select>
+        </div>
+        <button type="submit">SEARCH</button>
+      </div>
+    </section>
+    <section class="result-container">
+      <div class="result-grid" id="result-grid"></div>
+    </section>
+    <div class="page-number">
+      <button class="page-number__box">1</button>
+      <button class="page-number__next">Next</button>
+    </div>
+  </body>
+</html>
